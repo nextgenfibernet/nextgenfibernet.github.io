@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveen Cable Network | High-Speed Internet, IPTV & Store</title>
     <style>
-        /* --- CSS VARIABLES & RESET --- */
+        /* --- CSS VARIABLES & RESET (Same as Main Page) --- */
         :root {
             --primary: #0066cc;
             --primary-dark: #004c99;
@@ -25,35 +25,18 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: var(--font-main);
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
             overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
-        }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
 
-        ul {
-            list-style: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
 
         /* --- UTILITIES --- */
         .container {
@@ -131,20 +114,17 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            height: 70px;
-            display: flex;
-            align-items: center;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            height: 70px;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--primary);
             display: flex;
@@ -152,21 +132,15 @@
             gap: 10px;
         }
 
-        .logo span {
-            color: var(--secondary);
-        }
+.logo span { color: var(--secondary); }
 
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-        }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
 
         .nav-links li a {
             font-weight: 500;
             color: var(--dark);
             transition: var(--transition);
-            position: relative;
+            
         }
 
         .nav-links li a:hover, .nav-links li a.active {
@@ -1118,7 +1092,8 @@
                         <div class="product-card">
                             <div class="product-img">
                                 <!-- Reliable External Image -->
-                                <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&q=80&w=400" alt="Wifi Router">
+                                <img src="https://ubiqcom.in/assets/images/products/UB5020GWD-img.png" alt="Fiber Router">
+                        
                             </div>
                             <div class="product-info">
                                 <h3 class="product-title">High-Speed Wifi Router</h3>
@@ -1133,14 +1108,14 @@
                         <!-- Product 2 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1625805866449-3589fe3f71a3?auto=format&fit=crop&q=80&w=400" alt="HDMI Cable">
-                            </div>
+                                <img src="https://t3.ftcdn.net/jpg/05/02/26/28/360_F_502262873_ZGEvxvqtd7JqLTVVsXMLtczA1pGKXYMZ.jpg" alt="HDMI Cable">
+                        </div>
                             <div class="product-info">
                                 <h3 class="product-title">Premium HDMI Cable</h3>
                                 <p class="product-desc">High-speed 4K compatible HDMI cable (1.5m).</p>
                                 <div class="product-footer">
-                                    <div class="product-price">₹100</div>
-                                    <button class="add-to-cart-btn" onclick="addToCart('Premium HDMI Cable', 100)">Add</button>
+                                    <div class="product-price">₹99</div>
+                                    <button class="add-to-cart-btn" onclick="addToCart('Premium HDMI Cable', 99)">Add</button>
                                 </div>
                             </div>
                         </div>
@@ -1148,14 +1123,14 @@
                         <!-- Product 3 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=400" alt="AV LED">
-                            </div>
+                                <img src="https://img500.exportersindia.com/product_images/bc-500/2025/1/11870050/ac750-dual-band-wireless-cable-router-1736315896-7787192.jpg" alt="ONU Modem">
+                        </div>
                             <div class="product-info">
-                                <h3 class="product-title">AV LED Indicator</h3>
-                                <p class="product-desc">Small indicator LED for audio/video setups.</p>
+                                <h3 class="product-title">TP-Link WiFi Repeater</h3>
+                                <p class="product-desc">High-Speed WiFi Repeater</p>
                                 <div class="product-footer">
-                                    <div class="product-price">₹50</div>
-                                    <button class="add-to-cart-btn" onclick="addToCart('AV LED', 50)">Add</button>
+                                    <div class="product-price">₹2499</div>
+                                    <button class="add-to-cart-btn" onclick="addToCart('TP-Link WiFi Repeater', 2499)">Add</button>
                                 </div>
                             </div>
                         </div>
@@ -1163,37 +1138,24 @@
                         <!-- Product 4 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=400" alt="Universal Remote">
-                            </div>
+                                <img src="https://www.shutterstock.com/image-photo/young-woman-holding-tv-remotes-260nw-2284316081.jpg" alt="Universal Remote">
+                        </div>
                             <div class="product-info">
-                                <h3 class="product-title">Universal Remote</h3>
+                                <h3 class="product-title">Universal Remote 1 unit</h3>
                                 <p class="product-desc">Compatible with most Set-Top Boxes and TVs.</p>
                                 <div class="product-footer">
-                                    <div class="product-price">₹100</div>
-                                    <button class="add-to-cart-btn" onclick="addToCart('Universal Remote', 100)">Add</button>
+                                    <div class="product-price">₹99</div>
+                                    <button class="add-to-cart-btn" onclick="addToCart('Universal Remote', 99)">Add</button>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Product 5 -->
-                        <div class="product-card">
-                            <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&q=80&w=400" alt="Set Top Box">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">HD Set Top Box</h3>
-                                <p class="product-desc">Standard definition set top box with USB support.</p>
-                                <div class="product-footer">
-                                    <div class="product-price">₹1,000</div>
-                                    <button class="add-to-cart-btn" onclick="addToCart('HD Set Top Box', 1000)">Add</button>
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <!-- Product 6 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1593784991095-a20506948462?auto=format&fit=crop&q=80&w=400" alt="Android Box">
+                                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&q=80&w=400" alt="Set Top Box">
                             </div>
                             <div class="product-info">
                                 <h3 class="product-title">Android Smart Box</h3>
@@ -1208,8 +1170,8 @@
                         <!-- Product 7 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1563746098201-03c3bc6891d8?auto=format&fit=crop&q=80&w=400" alt="Fire Stick Lite">
-                            </div>
+                                <img src="https://cdn.mos.cms.futurecdn.net/MFCizjA7Tpumyhva5a7ZBk.jpg" alt="Fire Stick Lite">
+                        </div>
                             <div class="product-info">
                                 <h3 class="product-title">Fire Stick Lite</h3>
                                 <p class="product-desc">All your favorite content in one place. Fast streaming.</p>
@@ -1223,8 +1185,8 @@
                         <!-- Product 8 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&q=80&w=400" alt="Fire Stick HD Volume">
-                            </div>
+                                <img src="https://mahajanelectronics.com/cdn/shop/files/9_V-aNS5BMT4mtUPioa1cQ_3_gps_generated_1024x.png?v=1762431315" alt="Fire Stick">
+                        </div>
                             <div class="product-info">
                                 <h3 class="product-title">Fire Stick HD + Vol</h3>
                                 <p class="product-desc">Advanced Alexa voice remote with volume controls.</p>
@@ -1238,7 +1200,7 @@
                         <!-- Product 9 -->
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=400" alt="Lan Cable">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHCzMhmriKWRRokR8VRk9fFTaPXHd0j3TzA&s" alt="Lan Cable">
                             </div>
                             <div class="product-info">
                                 <h3 class="product-title">Yellow LAN Cable</h3>
