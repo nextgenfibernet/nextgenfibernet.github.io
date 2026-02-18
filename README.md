@@ -1,1 +1,1 @@
-# nextgenmywifi.github.io
+# nextgenfibernet.github.io
